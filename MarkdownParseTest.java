@@ -1,5 +1,9 @@
 import static org.junit.Assert.*;
 import org.junit.*;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2c9300a80518830d534650fc765f4731e4f1c2e9
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -17,6 +21,7 @@ public class MarkdownParseTest {
         List<String> expect = List.of("https://something.com", "some-page.html");
         assertEquals(MarkdownParse.getLinks(contents), expect);
     }
+<<<<<<< HEAD
 
     @Test
     public void testFile2() throws IOException {
@@ -32,3 +37,7 @@ public class MarkdownParseTest {
         assertEquals(MarkdownParse.getLinks(contents), expect);
     }
 }
+=======
+    
+}
+>>>>>>> 2c9300a80518830d534650fc765f4731e4f1c2e9
