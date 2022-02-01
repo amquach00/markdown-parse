@@ -30,6 +30,10 @@ public class MarkdownParse {
                 }
             }
 
+            if (nextOpenBracket < 0 || nextCloseBracket < 0 || openParen < 0 || closeParen < 0) {
+                return toReturn;
+            }
+
             currentIndex = closeParen + 1;
         }
         return toReturn;
